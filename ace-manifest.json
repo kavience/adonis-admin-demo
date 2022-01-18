@@ -263,6 +263,27 @@
           "alias": "c"
         }
       ]
+    },
+    "admin:install": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "adonis-admin/build/commands/AdminInstall",
+      "commandName": "admin:install",
+      "description": "Install adonis-admin",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
+    "admin:uninstall": {
+      "settings": {},
+      "commandPath": "adonis-admin/build/commands/AdminUnInstall",
+      "commandName": "admin:uninstall",
+      "description": "Uninstall adonis-admin",
+      "args": [],
+      "aliases": [],
+      "flags": []
     }
   },
   "aliases": {}
