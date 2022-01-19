@@ -17,7 +17,8 @@
   "preloads": [
     "./start/routes",
     "./start/kernel",
-    "./app/Admin/routes"
+    "./app/Admin/routes",
+    "./app/Admin/view"
   ],
   "providers": [
     "./providers/AppProvider",
