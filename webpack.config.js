@@ -57,9 +57,10 @@ Encore.addEntry('app', './resources/js/app.js')
 | we must copy them manually.
 |
 */
-Encore.copyFiles({
-  from: './resources/views/admin/assets',
-})
+// Encore.copyFiles({
+//   from: './resources/views/admin/assets',
+//   to: '[path][name].[ext]',
+// })
 
 /*
 |--------------------------------------------------------------------------
@@ -94,7 +95,7 @@ Encore.disableSingleRuntimeChunk()
 | will ensure that all unused files from the previous build are removed.
 |
 */
-Encore.cleanupOutputBeforeBuild()
+Encore.cleanupOutputBeforeBuild(['**/*', '!AdminLTE/**'])
 
 /*
 |--------------------------------------------------------------------------

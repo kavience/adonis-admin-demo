@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet"
+        href="{{ admin_asset('assets/AdminLTE/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
+    <!-- iCheck -->
+    <link rel="stylesheet"
+        href="{{ admin_asset('assets/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ admin_asset('assets/AdminLTE/dist/css/adminlte.min.css') }}">
+
+</head>
+
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-card">
+            <div class="login-logo">
+                <a href="/"><b>Adonis-admin</b></a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="bg-light rounded p-4">
+                        如果登陆出现问题，建议打开隐身窗口登陆.
+                        <br><br>
+                        If there is a problem with the login, it is recommended to open the incognito window to
+                        login.<br>
+                        <br>
+                        Log in use <strong>admin</strong> / <strong>admin</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- /.login-logo -->
+            <div class="login-card-body">
+                <p class="login-box-msg">登录</p>
+
+                <form action="/admin/login" method="post">
+                    <div class="form-group has-feedback 1">
+
+
+                        <input type="text" class="form-control" placeholder="用户名" name="username" value="admin">
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback 1">
+
+
+                        <input type="password" class="form-control" placeholder="密码" name="password" value="admin">
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    记住我
+                                </label>
+                            </div>
+                            {{--  <div class="checkbox icheck">
+                                <label>
+                                    <div class="icheckbox_square-blue checked" aria-checked="false"
+                                        aria-disabled="false" style="position: relative;"><input type="checkbox"
+                                            name="remember" value="1" checked=""
+                                            style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins
+                                            class="iCheck-helper"
+                                            style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                    </div>
+                                    记住我
+                                </label>
+                            </div>  --}}
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+</body>
+<!-- daterangepicker -->
+<script src="{{ admin_asset('assets/AdminLTE/plugins/moment/moment.min.js') }}"></script>
+{{--  <script src="{{ admin_asset('assets/AdminLTE/plugins/daterangepicker/daterangepicker.js') }}"></script> --}}
+<!-- jQuery -->
+<script src="{{ admin_asset('assets/AdminLTE/plugins/jquery/jquery.min.js') }}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{ admin_asset('assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script
+    src="{{ admin_asset('assets/AdminLTE/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}">
+</script>
+
+</html>
